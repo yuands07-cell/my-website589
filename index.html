@@ -1,0 +1,730 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>啓雲衛 Qi Yun Wei 启云卫 欢迎您 </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.collection-content td {
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.callout img.notion-static-icon {
+	width: 1em;
+	height: 1em;
+}
+
+.callout p {
+	margin: 0;
+}
+
+.callout h1,
+.callout h2,
+.callout h3 {
+	margin: 0 0 0.6rem;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+blockquote.quote-large {
+	font-size: 1.25em;
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.highlight-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.highlight-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.highlight-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.highlight-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.highlight-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.highlight-default_background {
+	color: rgba(44, 44, 43, 1);
+}
+.highlight-gray_background {
+	background: rgba(42, 28, 0, 0.07);
+}
+.highlight-brown_background {
+	background: rgba(139, 46, 0, 0.086);
+}
+.highlight-orange_background {
+	background: rgba(224, 101, 1, 0.129);
+}
+.highlight-yellow_background {
+	background: rgba(211, 168, 0, 0.137);
+}
+.highlight-teal_background {
+	background: rgba(0, 100, 45, 0.09);
+}
+.highlight-blue_background {
+	background: rgba(0, 111, 200, 0.09);
+}
+.highlight-purple_background {
+	background: rgba(102, 0, 178, 0.078);
+}
+.highlight-pink_background {
+	background: rgba(197, 0, 93, 0.086);
+}
+.highlight-red_background {
+	background: rgba(223, 22, 0, 0.094);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(134, 131, 126, 1);
+	fill: rgba(134, 131, 126, 1);
+}
+.block-color-brown {
+	color: rgba(159, 118, 90, 1);
+	fill: rgba(159, 118, 90, 1);
+}
+.block-color-orange {
+	color: rgba(210, 123, 45, 1);
+	fill: rgba(210, 123, 45, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 148, 52, 1);
+	fill: rgba(203, 148, 52, 1);
+}
+.block-color-teal {
+	color: rgba(80, 148, 110, 1);
+	fill: rgba(80, 148, 110, 1);
+}
+.block-color-blue {
+	color: rgba(63, 126, 190, 1);
+	fill: rgba(63, 126, 190, 1);
+}
+.block-color-purple {
+	color: rgba(154, 107, 180, 1);
+	fill: rgba(154, 107, 180, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(207, 81, 72, 1);
+	fill: rgba(207, 81, 72, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(240, 239, 237, 1);
+}
+.block-color-brown_background {
+	background: rgba(245, 237, 233, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 235, 222, 1);
+}
+.block-color-yellow_background {
+	background: rgba(249, 243, 220, 1);
+}
+.block-color-teal_background {
+	background: rgba(232, 241, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(232, 242, 250, 1);
+}
+.block-color-purple_background {
+	background: rgba(243, 235, 249, 1);
+}
+.block-color-pink_background {
+	background: rgba(250, 233, 241, 1);
+}
+.block-color-red_background {
+	background: rgba(252, 233, 231, 1);
+}
+.select-value-color-default { background-color: rgba(42, 28, 0, 0.07); }
+.select-value-color-gray { background-color: rgba(28, 19, 1, 0.11); }
+.select-value-color-brown { background-color: rgba(127, 51, 0, 0.156); }
+.select-value-color-orange { background-color: rgba(196, 88, 0, 0.203); }
+.select-value-color-yellow { background-color: rgba(209, 156, 0, 0.282); }
+.select-value-color-green { background-color: rgba(0, 96, 38, 0.156); }
+.select-value-color-blue { background-color: rgba(0, 99, 174, 0.172); }
+.select-value-color-purple { background-color: rgba(92, 0, 163, 0.141); }
+.select-value-color-pink { background-color: rgba(183, 0, 78, 0.152); }
+.select-value-color-red { background-color: rgba(206, 24, 0, 0.164); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="27f420d1-e76a-81aa-8978-fd3c9072d0c8" class="page sans"><header><img class="page-cover-image" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/photo_2025-10-01_18-56-04.jpg" style="object-position:center 11.219999999999997%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/photo_2025-10-01_18-58-25.jpg"/></div><h1 class="page-title">啓雲衛 Qi Yun Wei 启云卫 欢迎您 </h1><p class="page-description"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><div id="27f420d1-e76a-81da-a2d1-d0b679aad20d" class="column-list"><div id="27f420d1-e76a-81cc-b341-d88a2c3198b5" style="width:50%" class="column"><ul id="27f420d1-e76a-814e-8f3d-ce0f38e4d959" class="bulleted-list"><li style="list-style-type:disc"><strong>数据备份与恢复</strong></li></ul><ul id="27f420d1-e76a-8056-afa2-c463d5c9515f" class="bulleted-list"><li style="list-style-type:disc"><strong>云端存储解决方案</strong></li></ul><ul id="27f420d1-e76a-8084-851a-d34a2a0a1176" class="bulleted-list"><li style="list-style-type:disc"><strong>网络安全防护</strong></li></ul><ul id="27f420d1-e76a-8037-9f6c-defb1f125133" class="bulleted-list"><li style="list-style-type:disc"><strong>远程技术支持</strong></li></ul><ul id="27f420d1-e76a-805d-aef0-cf01029ec3d8" class="bulleted-list"><li style="list-style-type:disc"><strong>系统优化服务</strong></li></ul><p id="27f420d1-e76a-80f8-8766-fb47187bc3d7" class="">👋 欢迎使用启云卫服务！</p><h3 id="27f420d1-e76a-809e-89ed-ef9591e67c7f" class="">我们的优势</h3><ul id="27f420d1-e76a-8083-99d6-f640a41f4e15" class="bulleted-list"><li style="list-style-type:disc">全天候 24/7 技术支持</li></ul><ul id="27f420d1-e76a-8095-9f4e-ebb508ee6250" class="bulleted-list"><li style="list-style-type:disc">军工级数据加密技术</li></ul><ul id="27f420d1-e76a-800f-a023-fbec84c90d65" class="bulleted-list"><li style="list-style-type:disc">快速响应处理机制</li></ul><ul id="27f420d1-e76a-80d1-b44e-c43b689d2410" class="bulleted-list"><li style="list-style-type:disc">个性化定制方案</li></ul></div><div id="27f420d1-e76a-8130-a379-fe6e891a9bff" style="width:50%" class="column"><figure id="27f420d1-e76a-808f-b237-f1cc5e6401cb" class="image"><a href="https://www.linuxv2ray.com/wp-content/uploads/2022/05/1655649052-v2ray-android-client-v2rayng.png"><img src="https://www.linuxv2ray.com/wp-content/uploads/2022/05/1655649052-v2ray-android-client-v2rayng.png"/></a></figure><figure id="27f420d1-e76a-80f5-abdc-f4a17a3658be" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image.png"><img style="width:195px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image.png"/></a></figure></div></div><p id="27f420d1-e76a-8111-81ea-dc4e7ec466c7" class="">
+</p><hr id="27f420d1-e76a-81de-9245-c5a2e8730e11"/><h2 id="27f420d1-e76a-81e6-9666-d2db38437e1e" class=""><strong>国外重量级大厂合作 BandwagonHost（CN2 GIA 顶级大陆优化线路）DMIT （高端 VPS 提供商，专注大陆优化线路） Vmiss （主打优化线路 CN2、CMI）大陆访问速度快</strong></h2><p id="27f420d1-e76a-81f0-95c0-d138c7236eeb" class="">
+</p><hr id="27f420d1-e76a-8100-8221-e57e64cc36f0"/><h2 id="27f420d1-e76a-81df-9d96-db52d287aa4c" class="">支持企业个人定制高端稳定外网访问（定制VLess + WS + TLS对比普通VPN）</h2><p id="27f420d1-e76a-812a-9098-cf82e066383a" class=""><del><em><mark class="highlight-pink"><strong><span style="border-bottom:0.05em solid">普通VPN机场节点：</span></strong></mark></em></del><strong>攻击者/爬虫/嗅探者能从普通明文 VPN 流量中取得的“用户隐私”一览</strong></p><p id="280420d1-e76a-80da-a9a2-c1203b828904" class="">按严重性排序（明文时）：</p><ol type="1" id="280420d1-e76a-80a5-b11d-c88d7213c097" class="numbered-list" start="1"><li><strong>完整 URL（包含 query）</strong> — 直接暴露访问资源、搜索、Token 等。</li></ol><ol type="1" id="280420d1-e76a-805b-bf44-fd981596e270" class="numbered-list" start="2"><li><strong>HTTP headers（包括 User-Agent、Referer、Cookie、Authorization）</strong> — 可用来识别用户、会话、抓取登录凭证。</li></ol><ol type="1" id="280420d1-e76a-8000-8a5f-f2f6d279aa0a" class="numbered-list" start="3"><li><strong>表单内容 / POST 数据（用户名、密码、私信）</strong>。</li></ol><ol type="1" id="280420d1-e76a-8059-b16f-d162f3499ab1" class="numbered-list" start="4"><li><strong>DNS 数据（域名解析请求）</strong> — 暴露用户访问哪些域名。</li></ol><ol type="1" id="280420d1-e76a-8051-b4ec-d4f0f04297c1" class="numbered-list" start="5"><li><strong>会话元数据：源 IP、目标 IP、端口、时间戳、流量体量</strong> — 可用于关联追踪和指纹识别。</li></ol><ol type="1" id="280420d1-e76a-8006-958c-d051a0000da7" class="numbered-list" start="6"><li><strong>未加密的应用层协议数据（聊天、IM、旧式邮件协议）</strong>。</li></ol><ol type="1" id="280420d1-e76a-8069-a11b-e9521ec4da3f" class="numbered-list" start="7"><li><strong>TLS 握手可见字段（SNI、证书链、JA3 指纹）——在不启用 ECH 时 SNI 明文</strong>。</li></ol><p id="280420d1-e76a-80dc-8d30-ffd58c9e3fbf" class="">
+</p><p id="27f420d1-e76a-81f1-838c-f10dbf7fd42a" class=""><em><mark class="highlight-pink"><strong>定制VLess + WS + TLS：</strong></mark></em><mark class="highlight-default"><strong>把你的真实访问内容藏在 HTTPS 外壳里，只剩少量“元数据”能被外界看到</strong></mark></p><ul id="280420d1-e76a-809d-a0cc-d89748289dac" class="bulleted-list"><li style="list-style-type:disc"><strong>不被嗅探</strong>：明文 VPN 任何人抓包都能看到你在访问什么；VLess+WS+TLS 下，抓包只看到 HTTPS，不知道你具体干了什么。</li></ul><ul id="280420d1-e76a-8069-9923-ff5cfdf89abd" class="bulleted-list"><li style="list-style-type:disc"><strong>不被秒识别</strong>：明文 VPN 的协议头一眼就能识别；VLess+WS+TLS 就像在看 YouTube/访问网站，外人很难确认你在翻墙。</li></ul><ul id="280420d1-e76a-8095-bf6f-e37c269b8ac2" class="bulleted-list"><li style="list-style-type:disc"><strong>不被轻易封</strong>：VPN 协议端口和模式太显眼，容易被封锁；VLess+WS+TLS 走 443 端口，和普通网站流量一样，抗封锁能力强。</li></ul><ul id="280420d1-e76a-80c3-8a1c-e62da6d8b6f3" class="bulleted-list"><li style="list-style-type:disc"><strong>不泄露隐私</strong>：明文 VPN 会把用户名、密码甚至请求内容暴露在包里；VLess+WS+TLS 把认证、数据全藏在 TLS 加密里，外人无法解密。</li></ul><ul id="280420d1-e76a-80af-aaf0-fe4128fec70d" class="bulleted-list"><li style="list-style-type:disc"><strong>可伪装</strong>：VLess 可以挂在正常网站的域名下，别人只能看到你访问了这个网站，看不出是代理。</li></ul><hr id="27f420d1-e76a-8171-8f52-cd5476d667e3"/><h2 id="27f420d1-e76a-8105-94da-f8e3a9eb0e57" class=""><mark class="highlight-teal">VLess + WS + TLS</mark><mark class="highlight-red"> （对比普通明文 VPN）</mark></h2><table id="280420d1-e76a-80af-8164-e3b17461a482" class="simple-table"><thead class="simple-table-header"><tr id="280420d1-e76a-804f-b5b2-d7023f5b2ad2"><th id="HitM" class="simple-table-header-color simple-table-header"><mark class="highlight-red"><strong>对比点</strong></mark></th><th id="CUiE" class="simple-table-header-color simple-table-header"><mark class="highlight-red"><strong>普通明文 VPN（PPTP/L2TP 无加密 或弱加密）</strong></mark></th><th id="@I&lt;E" class="simple-table-header-color simple-table-header"><mark class="highlight-teal"><strong>VLess + WS + TLS</strong></mark></th></tr></thead><tbody><tr id="280420d1-e76a-8009-8627-f1d222458d2b"><td id="HitM" class=""><strong>流量加密</strong></td><td id="CUiE" class="">明文传输，任何嗅探都能直接看到目标 IP/域名/内容</td><td id="@I&lt;E" class="">全程 TLS1.3 加密，抓包只能看到 HTTPS 流量，无法还原内容</td></tr><tr id="280420d1-e76a-80d5-896a-cc97cd5e47f2"><td id="HitM" class=""><strong>流量特征</strong></td><td id="CUiE" class="">协议特征明显（PPTP/L2TP/ESP 头部一眼能看出 VPN）</td><td id="@I&lt;E" class="">表现为普通 HTTPS WebSocket 流量，与正常网站访问难区分</td></tr><tr id="280420d1-e76a-8005-98fb-df405d06eaaf"><td id="HitM" class=""><strong>隐私暴露</strong></td><td id="CUiE" class="">ISP/旁路监控能直接看到访问的域名/IP、甚至应用层数据</td><td id="@I&lt;E" class="">只能看到连接了某个 HTTPS 域名（SNI），具体内容和目标地址被加密</td></tr><tr id="280420d1-e76a-8014-8cf7-d16ce49e5e2a"><td id="HitM" class=""><strong>抗 DPI/封锁</strong></td><td id="CUiE" class="">极易被深度包检测识别和阻断</td><td id="@I&lt;E" class="">看起来就是浏览网页（WebSocket over TLS），识别和封锁难度大得多</td></tr><tr id="280420d1-e76a-80c4-b9cb-d850615b7179"><td id="HitM" class=""><strong>数据泄露风险</strong></td><td id="CUiE" class="">明文：用户名、密码、会话内容都能被动截获</td><td id="@I&lt;E" class="">加密：即使抓包，也无法解密内容，除非 TLS 被破坏</td></tr><tr id="280420d1-e76a-805f-abc8-eba811008146"><td id="HitM" class=""><strong>元数据保护</strong></td><td id="CUiE" class="">暴露用户行为模式（访问时间、网站、协议）</td><td id="@I&lt;E" class="">隐藏绝大部分，只剩下域名（SNI）、流量大小和时序</td></tr><tr id="280420d1-e76a-8075-bf99-d5ed5e84f07d"><td id="HitM" class=""><strong>服务端暴露</strong></td><td id="CUiE" class="">VPN 端口、协议固定，探测容易</td><td id="@I&lt;E" class="">走 443/HTTPS，和正常网站无差别，伪装性强</td></tr></tbody></table><p id="27f420d1-e76a-8193-a923-e3a93576dd7d" class="">
+</p><hr id="27f420d1-e76a-81c7-8184-e22a518cf4b4"/><h2 id="27f420d1-e76a-81cb-98e1-fdd7f7aa49b1" class="">使用V2RayNG（安卓）+ Shadowrocket（iOS）</h2><ul id="280420d1-e76a-8076-8382-cbf3a02b7858" class="bulleted-list"><li style="list-style-type:disc"><strong>V2RayNG（安卓）</strong><ul id="280420d1-e76a-80a5-af8b-d7b667cafb01" class="bulleted-list"><li style="list-style-type:circle">开源（GitHub可查），代码透明，理论上没有后门。</li></ul><ul id="280420d1-e76a-80c4-b95a-f929e07939a4" class="bulleted-list"><li style="list-style-type:circle">社区活跃，维护频繁，漏洞修复较快。</li></ul><ul id="280420d1-e76a-8047-b509-e09e20c9374c" class="bulleted-list"><li style="list-style-type:circle">但要注意：必须从 <strong>GitHub 官方 Release 或可信渠道</strong> 下载，避免下载第三方篡改版（加广告/木马）。</li></ul><p id="280420d1-e76a-80f5-a5cc-d11e5422b49f" class="">
+</p></li></ul><ul id="280420d1-e76a-800c-ab2e-c1af0b9a0441" class="bulleted-list"><li style="list-style-type:disc"><strong>Shadowrocket（iOS）</strong><ul id="280420d1-e76a-8003-bea5-f87022858df1" class="bulleted-list"><li style="list-style-type:circle">收费软件，非开源，但口碑好，作者一直在维护。</li></ul><ul id="280420d1-e76a-8063-a0a5-c6e7e9065d95" class="bulleted-list"><li style="list-style-type:circle">上架 App Store，苹果审核机制在一定程度上能防止恶意行为。</li></ul><ul id="280420d1-e76a-807f-b081-fd490e0acc4d" class="bulleted-list"><li style="list-style-type:circle">在 iOS 上，App 本身权限受系统限制，相对更安全</li></ul></li></ul><hr id="27f420d1-e76a-81c9-bf1e-c92cdf92e37f"/><h1 id="27f420d1-e76a-81e2-8219-c8bef7b12775" class="">V2RayNG（安卓）使用教程：</h1><p id="280420d1-e76a-80d4-a706-d826be5551be" class=""><strong>V2RayNG GitHub Releases 页面：</strong><br/><mark class="highlight-red"><a href="https://github.com/2dust/v2rayNG/releases">https://github.com/2dust/v2rayNG/releases</a></mark></p><p id="280420d1-e76a-8008-a83f-fe0d6976210f" class=""><em><mark class="highlight-teal"><strong>🔎 如何选择下载文件？<br/>在 GitHub 页面找到最新的版本（通常在最上方），然后在 Assets（文件）列表中下载：</strong></mark></em></p><p id="280420d1-e76a-80a8-9038-dc4e8b2352ad" class=""><em><mark class="highlight-teal"><strong>v2rayNG_X.X.XX_arm64-v8a.apk：适用于大多数新型安卓手机（64位）。</strong></mark></em></p><p id="280420d1-e76a-80f7-b398-e93163856e68" class=""><em><mark class="highlight-teal"><strong>v2rayNG_X.X.XX_armeabi-v7a.apk：适用于较老或中低端安卓手机（32位）。</strong></mark></em></p><p id="280420d1-e76a-80a8-a39a-dc7a75ef272a" class=""><em><mark class="highlight-teal"><strong>v2rayNG_X.X.XX_universal.apk：如果不知道选哪个，可以下载这个通用包，它体积最大，但兼容性最好</strong></mark></em></p><p id="280420d1-e76a-80bb-9d52-d440e77dde19" class="">
+</p><p id="280420d1-e76a-80c3-8ba7-c7c147ed268e" class=""><strong>1.安装完成后桌面会出现 v2rayNG 的 logo, 打开该应用，进行配置扫描我们的节点二维码：</strong></p><figure id="280420d1-e76a-803c-ad2a-ea9fa7c43ba7" class="image" style="text-align:left"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%201.png"><img style="width:200px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%201.png"/></a></figure><p id="280420d1-e76a-80f3-a1e5-e37ce38fa1ae" class=""><strong>打开 V2rayNG 科学上网 APP,进入主界面，如下图所示。然后点击软件主界面右上角的 ➕ 号按钮会出现功能选项，然后选择扫描二维码（</strong><mark class="highlight-red"><strong>联系客服获取定制节点二维码</strong></mark><strong>）</strong></p><figure id="280420d1-e76a-80d9-afc0-ec60bedce247" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%202.png"><img style="width:709.984375px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%202.png"/></a></figure><p id="280420d1-e76a-8041-a906-f7d9f2d58891" class="">
+</p><p id="280420d1-e76a-80f7-b33f-dc35c48aec2e" class=""><strong>首页节点列表中选择需要使用的线路</strong></p><p id="280420d1-e76a-8020-8e55-f2f5c1b50cdf" class="">
+</p><figure id="280420d1-e76a-80f8-8ac5-ea9747dcb96c" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%203.png"><img style="width:580.5px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%203.png"/></a></figure><p id="280420d1-e76a-8032-b8b2-c9f8a65e7309" class="">
+</p><h1 id="280420d1-e76a-805c-9085-c7fb063e0506" class=""><strong>分流规则</strong></h1><p id="280420d1-e76a-80b5-bbc4-f2a518594ca3" class=""><strong>依次点击「设置」「预定义规则」，选择「绕过局域网及大陆地址」即可实现分流功能</strong></p><figure id="280420d1-e76a-80fa-ad70-ea248ec6bdb3" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%204.png"><img style="width:710px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%204.png"/></a></figure><h2 id="27f420d1-e76a-8166-b9d9-cb862c5d91d8" class=""><strong>Shadowrocket 又称「小火箭」 </strong>使用教程：</h2><p id="27f420d1-e76a-812f-b214-e76f966e713b" class="">Shadowrocket 是一款 iOS / iPadOS 上的付费应用，由于总所周知的愿意无法在国内 App Store 购买。如有需要，还请到美区 App Store 下载安装<mark class="highlight-blue"><strong>（找客服提供美区ID）</strong></mark></p><h2 id="280420d1-e76a-80b0-be4d-d60567ff14e9" class="">下载流程：</h2><p id="280420d1-e76a-80c4-90f8-c86102e4d099" class="">第一步：搜索shadowrocket 点击购买下载，登录团队ID打开App store 退出自己的ID</p><figure id="280420d1-e76a-801e-ae5f-ca47326d047a" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%205.png"><img style="width:580.484375px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%205.png"/></a></figure><p id="280420d1-e76a-8041-8b93-e82fdb50d539" class="">
+</p><p id="280420d1-e76a-809a-aa6d-fd1435fa68dd" class="">
+</p><p id="280420d1-e76a-80ee-b4e4-c054cbbaccda" class="">第二步：搜索shadowrocket 点击购买下载，登录团队ID<mark class="highlight-red">（重要提示：千万不要在设置里登陆美区ID，否则会绑定手机）</mark></p><figure id="280420d1-e76a-8020-b06f-f405e2c03881" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%206.png"><img style="width:709.984375px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%206.png"/></a></figure><p id="280420d1-e76a-809b-87bd-eaebcc43dbb5" class="">
+</p><p id="280420d1-e76a-8073-a33a-f8d18f6f9f93" class="">
+</p><p id="280420d1-e76a-8083-a34b-ea272d48a877" class="">第三步：输入密码后点击其他选项！点击不升级</p><figure id="280420d1-e76a-8055-b2ae-fcd17f975d4a" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%207.png"><img style="width:540px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%207.png"/></a></figure><p id="280420d1-e76a-801f-a7be-dd8c94634c3c" class="">
+</p><p id="280420d1-e76a-803a-bba9-f81650f63e21" class="">
+</p><p id="280420d1-e76a-8050-966d-dac5ec74af5a" class="">第四步：按照提示下载。完成后可以下载你需要的国外app，例如telegram，TikTok，Facebook………完成后记得退出美区ID</p><figure id="280420d1-e76a-8056-ae7a-d1940fd279e0" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%208.png"><img style="width:709.984375px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%208.png"/></a></figure><p id="280420d1-e76a-8078-bab5-c813c7022684" class="">
+</p><p id="280420d1-e76a-80de-b5c9-d5f4cc1257ea" class="">
+</p><p id="280420d1-e76a-8008-bab9-fe9fce09e7be" class="">第五步：完成后记得退出美区ID！登陆自己的ID</p><figure id="280420d1-e76a-8065-9d2a-df217cd605f4" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%209.png"><img style="width:548px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%209.png"/></a></figure><p id="280420d1-e76a-8005-9fc1-c4462dfdf306" class="block-color-yellow_background">
+</p><h2 id="280420d1-e76a-8030-9ea2-c08382320615" class="">下载好老火箭后：进入老火箭点击设置切换中文进行配置！如果你会英文就当我没有说</h2><figure id="280420d1-e76a-801d-8f8c-dbf6830c0088" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2010.png"><img style="width:709.984375px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2010.png"/></a></figure><hr id="280420d1-e76a-800c-8ec9-e61b4e7825d1"/><p id="280420d1-e76a-801a-b9e6-cb60274efd78" class="">
+</p><p id="280420d1-e76a-806e-9d26-d89e0741248a" class="">
+</p><p id="280420d1-e76a-80ee-a8e8-e68c36f45b72" class="">第一步：点击配置扫描下方配置二维码！选择配置文件-配置规则.只需要扫一下点击文件一下</p><figure id="280420d1-e76a-8000-a225-f9e3f5b9527c" class="image" style="text-align:center"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2011.png"><img style="width:505px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2011.png"/></a></figure><figure id="280420d1-e76a-808a-8c24-fc12ad73e09f" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2012.png"><img style="width:400px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2012.png"/></a></figure><p id="280420d1-e76a-80d1-a776-da126eaeed38" class="">
+</p><p id="280420d1-e76a-8099-ac05-d0840875a6ae" class="">第二步：进入首页、扫描节点二维码。按提示完成即可开始遨游全球🌎<mark class="highlight-red"><strong>（只需扫描客服给你的节点二维码，然后点击连接开关即可）点击连通性测试是为了看节点是否连接上，如果你有多条节点显示需要按一下节点会有一个橘红色小点在后面就表示你已经选择了此节点</strong></mark></p><figure id="280420d1-e76a-8054-bab6-de81c63c7305" class="image"><a href="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2013.png"><img style="width:512px" src="%E5%95%93%E9%9B%B2%E8%A1%9B%20Qi%20Yun%20Wei%20%E5%90%AF%E4%BA%91%E5%8D%AB%20%E6%AC%A2%E8%BF%8E%E6%82%A8%2027f420d1e76a81aa8978fd3c9072d0c8/image%2013.png"/></a></figure><p id="27f420d1-e76a-8128-bdf4-c2d2da229cf7" class="">
+</p><hr id="27f420d1-e76a-8111-bf25-e9b7428c73e3"/><p id="280420d1-e76a-80c1-b1d1-c5ce09398a8a" class="">
+</p><p id="27f420d1-e76a-81c3-aa50-e649ad93f650" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
