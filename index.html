@@ -728,3 +728,124 @@ blockquote.quote-large {
 </p><hr id="27f420d1-e76a-8111-bf25-e9b7428c73e3"/><p id="280420d1-e76a-80c1-b1d1-c5ce09398a8a" class="">
 </p><p id="27f420d1-e76a-81c3-aa50-e649ad93f650" class="">
 </p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>啓雲衛 Qi Yun Wei 启云卫 欢迎您</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+
+    /* --- footer 宣传栏样式 --- */
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#06b6d4;
+      --muted:#94a3b8;
+      --white:#e6eef6;
+      --radius:12px;
+      --gap:18px;
+    }
+    .footer-pricing{background:var(--bg);color:var(--white);padding:36px 20px}
+    .wrap{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .title{font-size:16px;font-weight:700;margin-bottom:8px}
+    .subtitle{color:var(--muted);font-size:13px;margin-bottom:12px}
+    .table{width:100%;border-collapse:collapse;margin-bottom:10px}
+    .table td{padding:8px 6px}
+    .tag-old{color:var(--muted);text-decoration:line-through;font-size:13px}
+    .tag-new{background:linear-gradient(90deg,var(--accent),#7c3aed);padding:6px 10px;border-radius:999px;font-weight:700;font-size:14px}
+    .list{margin:0;padding:0;list-style:none;font-size:14px;color:var(--muted)}
+    .contact{margin-top:12px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#042022;text-decoration:none;font-weight:700}
+    .muted-small{font-size:12px;color:var(--muted);margin-top:8px}
+    .note{font-size:13px;color:var(--muted);margin-top:6px}
+    @media (max-width:780px){
+      .wrap{grid-template-columns:1fr}
+      .footer-pricing{padding:20px 12px}
+    }
+    .row{display:flex;align-items:center;justify-content:space-between}
+    .badge{font-size:12px;padding:4px 8px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>啓雲衛 Qi Yun Wei 启云卫</h1>
+    <p>欢迎您</p>
+  </header>
+
+  <main>
+    <h2>这是网站的首页</h2>
+    <p>你可以在这里放一些介绍或公告。</p>
+  </main>
+
+  <!-- 官网底部套餐宣传栏 -->
+  <footer class="footer-pricing">
+    <div class="wrap">
+      <!-- 左侧：基础套餐 -->
+      <div class="card" aria-label="基础套餐">
+        <div class="title">🌐 基础套餐（VLESS + WS + TLS）</div>
+        <div class="subtitle">简洁稳定，适合日常使用</div>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>50G / 月</td>
+              <td class="tag-old">50 RMB</td>
+              <td style="text-align:right"><span class="tag-new">30 RMB</span></td>
+            </tr>
+            <tr>
+              <td>100G / 月</td>
+              <td class="tag-old">100 RMB</td>
+              <td style="text-align:right"><span class="tag-new">50 RMB</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note">支持 VLESS + WebSocket + TLS，适配主流设备与客户端</div>
+        <div class="contact">
+          <a class="btn" href="#contact">立即购买 / 咨询</a>
+          <div class="muted-small">付款方式：支付宝 / 微信 / USDT（按需添加）</div>
+        </div>
+      </div>
+
+      <!-- 右侧：高端线路 -->
+      <div class="card" aria-label="高端线路">
+        <div class="title">⚡ 高端线路 · 可定制</div>
+        <div class="subtitle">低延迟 · 高稳定 · 企业级机房</div>
+        <ul class="list">
+          <li>机房：DMIT / 搬瓦工 / GigsGigsCloud</li>
+          <li>节点：洛杉矶 / 香港 / 大阪 / 东京</li>
+          <li>线路：大陆优化 / 稳定高速 / 按需定制</li>
+        </ul>
+        <div style="margin-top:12px" class="row">
+          <div class="badge">起步价：100 RMB / 月</div>
+          <a class="btn" href="#custom">定制报价</a>
+        </div>
+        <div class="note">大流量 / 多并发 / 专线加速需求请联系客服，提供具体用途以便定制最优方案。</div>
+      </div>
+    </div>
+
+    <!-- 底部版权与简短声明 -->
+    <div style="max-width:1100px;margin:18px auto 0;color:#94a3b8;font-size:12px;text-align:center">
+      © <span id="year"></span> 顶级团队 启云卫（QiYunWei） · 本服务仅提供线路与带宽租用，不涉违法内容。
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
